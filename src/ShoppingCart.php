@@ -217,6 +217,16 @@ class ShoppingCart
     {
         $this->coupons->push($coupon);
     }
+    
+     /**
+     * Removes assigned coupons.
+     *
+     * @return Collection
+     */
+    public function removeCoupons()
+    {
+        $this->coupons = new Collection();
+    }
 
     /**
      * Get coupons.
